@@ -1,0 +1,727 @@
+object Form_main_board: TForm_main_board
+  Left = 305
+  Height = 544
+  Top = 108
+  Width = 850
+  Caption = 'Кодовые слова'
+  ClientHeight = 544
+  ClientWidth = 850
+  OnResize = FormResize
+  OnShow = FormShow
+  LCLVersion = '1.6.4.0'
+  object GroupBox1: TGroupBox
+    AnchorSideTop.Control = GroupBox_cards
+    AnchorSideRight.Control = GroupBox2
+    AnchorSideRight.Side = asrCenter
+    Left = 662
+    Height = 145
+    Top = 10
+    Width = 164
+    Anchors = [akTop, akRight]
+    Caption = 'Ходит команда'
+    ClientHeight = 119
+    ClientWidth = 162
+    Font.Height = -19
+    ParentFont = False
+    TabOrder = 0
+    object Button_end_move: TButton
+      AnchorSideLeft.Control = GroupBox1
+      AnchorSideRight.Control = GroupBox1
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = GroupBox1
+      AnchorSideBottom.Side = asrBottom
+      Left = 5
+      Height = 36
+      Top = 71
+      Width = 152
+      Anchors = [akLeft, akRight, akBottom]
+      BorderSpacing.Left = 5
+      BorderSpacing.Right = 5
+      BorderSpacing.Bottom = 12
+      Caption = 'Закончить ход'
+      Font.Height = -19
+      OnClick = Button_end_moveClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label_pl_move: TLabel
+      Left = 32
+      Height = 55
+      Top = 8
+      Width = 104
+      Alignment = taCenter
+      AutoSize = False
+      Color = clMaroon
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+    end
+  end
+  object GroupBox2: TGroupBox
+    AnchorSideTop.Control = GroupBox1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 660
+    Height = 113
+    Top = 175
+    Width = 169
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 20
+    BorderSpacing.Right = 21
+    Caption = 'Счёт'
+    ClientHeight = 87
+    ClientWidth = 167
+    Font.Height = -19
+    ParentFont = False
+    TabOrder = 1
+    object Label_pl_1: TLabel
+      Left = 16
+      Height = 56
+      Top = 8
+      Width = 56
+      Alignment = taCenter
+      AutoSize = False
+      Caption = '0'
+      Color = clMaroon
+      Font.Height = -29
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+    object Label_pl_2: TLabel
+      Left = 96
+      Height = 56
+      Top = 8
+      Width = 56
+      Alignment = taCenter
+      AutoSize = False
+      Caption = '0'
+      Color = clNavy
+      Font.Height = -29
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+  end
+  object Button_generate: TButton
+    AnchorSideTop.Control = GroupBox2
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = GroupBox2
+    AnchorSideRight.Side = asrCenter
+    Left = 650
+    Height = 60
+    Top = 318
+    Width = 188
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 30
+    Caption = 'Новая сдача'
+    Font.Height = -29
+    OnClick = Button_generateClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Button_new_game: TButton
+    AnchorSideLeft.Control = GroupBox2
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 663
+    Height = 41
+    Top = 483
+    Width = 163
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 20
+    Caption = 'Новая игра'
+    Font.Height = -21
+    OnClick = Button_new_gameClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object GroupBox_cards: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 10
+    Height = 524
+    Top = 10
+    Width = 624
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 10
+    BorderSpacing.Right = 216
+    BorderSpacing.Bottom = 10
+    Caption = 'Игровое поле'
+    ClientHeight = 498
+    ClientWidth = 622
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 4
+    object word_1_1: TLabel
+      Left = 4
+      Height = 72
+      Top = -1
+      Width = 120
+      Alignment = taCenter
+      Anchors = []
+      AutoSize = False
+      BorderSpacing.Left = 5
+      Caption = 'word_1_1'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_1_2: TLabel
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = word_1_1
+      AnchorSideBottom.Control = word_1_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 128
+      Height = 72
+      Top = -1
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akTop, akBottom]
+      AutoSize = False
+      BorderSpacing.Left = 5
+      Caption = 'word_1_2'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_1_3: TLabel
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = word_1_1
+      AnchorSideBottom.Control = word_1_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 255
+      Height = 72
+      Top = -1
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akTop, akBottom]
+      AutoSize = False
+      BorderSpacing.Left = 5
+      Caption = 'word_1_3'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_1_4: TLabel
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = word_1_1
+      AnchorSideBottom.Control = word_1_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 380
+      Height = 72
+      Top = -1
+      Width = 112
+      Alignment = taCenter
+      Anchors = [akTop, akBottom]
+      AutoSize = False
+      BorderSpacing.Left = 5
+      Caption = 'word_1_4'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_1_5: TLabel
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = word_1_1
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_1_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 504
+      Height = 72
+      Top = -1
+      Width = 106
+      Alignment = taCenter
+      Anchors = [akTop, akBottom]
+      AutoSize = False
+      BorderSpacing.Left = 5
+      BorderSpacing.Right = 5
+      Caption = 'word_1_5'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_2_1: TLabel
+      AnchorSideLeft.Control = word_1_1
+      AnchorSideRight.Control = word_1_1
+      AnchorSideRight.Side = asrBottom
+      Left = 4
+      Height = 72
+      Top = 78
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akLeft, akRight]
+      AutoSize = False
+      Caption = 'word_2_1'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_2_2: TLabel
+      AnchorSideLeft.Control = word_1_2
+      AnchorSideTop.Control = word_2_1
+      AnchorSideRight.Control = word_1_2
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_2_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 128
+      Height = 72
+      Top = 78
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_2_2'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_2_3: TLabel
+      AnchorSideLeft.Control = word_1_3
+      AnchorSideTop.Control = word_2_1
+      AnchorSideRight.Control = word_1_3
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_2_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 255
+      Height = 72
+      Top = 78
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_2_3'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_2_4: TLabel
+      AnchorSideLeft.Control = word_1_4
+      AnchorSideTop.Control = word_2_1
+      AnchorSideRight.Control = word_1_4
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_2_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 380
+      Height = 72
+      Top = 78
+      Width = 112
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_2_4'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_2_5: TLabel
+      AnchorSideLeft.Control = word_1_5
+      AnchorSideTop.Control = word_2_1
+      AnchorSideRight.Control = word_1_5
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_2_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 504
+      Height = 72
+      Top = 78
+      Width = 106
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_2_5'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_3_5: TLabel
+      AnchorSideLeft.Control = word_1_5
+      AnchorSideTop.Control = word_3_1
+      AnchorSideRight.Control = word_1_5
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_3_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 504
+      Height = 72
+      Top = 164
+      Width = 106
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_3_5'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_3_4: TLabel
+      AnchorSideLeft.Control = word_1_4
+      AnchorSideTop.Control = word_3_1
+      AnchorSideRight.Control = word_1_4
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_3_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 380
+      Height = 72
+      Top = 164
+      Width = 112
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_3_4'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_3_3: TLabel
+      AnchorSideLeft.Control = word_1_3
+      AnchorSideTop.Control = word_3_1
+      AnchorSideRight.Control = word_1_3
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_3_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 255
+      Height = 72
+      Top = 164
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_3_3'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_3_2: TLabel
+      AnchorSideLeft.Control = word_1_2
+      AnchorSideTop.Control = word_3_1
+      AnchorSideRight.Control = word_1_2
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_3_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 128
+      Height = 72
+      Top = 164
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_3_2'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_3_1: TLabel
+      AnchorSideLeft.Control = word_1_1
+      AnchorSideRight.Control = word_1_1
+      AnchorSideRight.Side = asrBottom
+      Left = 4
+      Height = 72
+      Top = 164
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akLeft, akRight]
+      AutoSize = False
+      Caption = 'word_3_1'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_4_1: TLabel
+      AnchorSideLeft.Control = word_1_1
+      AnchorSideRight.Control = word_1_1
+      AnchorSideRight.Side = asrBottom
+      Left = 4
+      Height = 72
+      Top = 243
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akLeft, akRight]
+      AutoSize = False
+      Caption = 'word_4_1'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_4_2: TLabel
+      AnchorSideLeft.Control = word_1_2
+      AnchorSideTop.Control = word_4_1
+      AnchorSideRight.Control = word_1_2
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_4_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 128
+      Height = 72
+      Top = 243
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_4_2'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_4_3: TLabel
+      AnchorSideLeft.Control = word_1_3
+      AnchorSideTop.Control = word_4_1
+      AnchorSideRight.Control = word_1_3
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_4_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 255
+      Height = 72
+      Top = 243
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_4_3'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_4_4: TLabel
+      AnchorSideLeft.Control = word_1_4
+      AnchorSideTop.Control = word_4_1
+      AnchorSideRight.Control = word_1_4
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_4_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 380
+      Height = 72
+      Top = 243
+      Width = 112
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_4_4'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_4_5: TLabel
+      AnchorSideLeft.Control = word_1_5
+      AnchorSideTop.Control = word_4_1
+      AnchorSideRight.Control = word_1_5
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_4_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 504
+      Height = 72
+      Top = 243
+      Width = 106
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_4_5'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_5_5: TLabel
+      AnchorSideLeft.Control = word_1_5
+      AnchorSideTop.Control = word_5_1
+      AnchorSideRight.Control = word_1_5
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_5_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 504
+      Height = 72
+      Top = 329
+      Width = 106
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_5_5'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_5_4: TLabel
+      AnchorSideLeft.Control = word_1_4
+      AnchorSideTop.Control = word_5_1
+      AnchorSideRight.Control = word_1_4
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_5_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 380
+      Height = 72
+      Top = 329
+      Width = 112
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_5_4'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_5_3: TLabel
+      AnchorSideLeft.Control = word_1_3
+      AnchorSideTop.Control = word_5_1
+      AnchorSideRight.Control = word_1_3
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_5_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 255
+      Height = 72
+      Top = 329
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_5_3'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_5_2: TLabel
+      AnchorSideLeft.Control = word_1_2
+      AnchorSideTop.Control = word_5_1
+      AnchorSideRight.Control = word_1_2
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = word_5_1
+      AnchorSideBottom.Side = asrBottom
+      Left = 128
+      Height = 72
+      Top = 329
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = False
+      Caption = 'word_5_2'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+    object word_5_1: TLabel
+      AnchorSideLeft.Control = word_1_1
+      AnchorSideRight.Control = word_1_1
+      AnchorSideRight.Side = asrBottom
+      Left = 4
+      Height = 72
+      Top = 329
+      Width = 120
+      Alignment = taCenter
+      Anchors = [akLeft, akRight]
+      AutoSize = False
+      Caption = 'word_5_1'
+      Color = clGreen
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+      OnClick = ClickOnCard
+      OptimalFill = True
+    end
+  end
+  object Memo_words: TMemo
+    Left = 448
+    Height = 35
+    Top = 464
+    Width = 150
+    Lines.Strings = (
+      'Memo_words'
+    )
+    TabOrder = 5
+    Visible = False
+  end
+  object Button_show_cards_form: TButton
+    AnchorSideLeft.Control = GroupBox2
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Button_generate
+    AnchorSideTop.Side = asrBottom
+    Left = 645
+    Height = 41
+    Top = 403
+    Width = 198
+    BorderSpacing.Top = 25
+    Caption = 'Показать поле капитанам'
+    Font.Height = -16
+    OnClick = Button_show_cards_formClick
+    ParentFont = False
+    TabOrder = 6
+    Visible = False
+  end
+end
