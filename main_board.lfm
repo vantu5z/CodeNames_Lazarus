@@ -1,7 +1,7 @@
 object Form_main_board: TForm_main_board
-  Left = 305
+  Left = 315
   Height = 544
-  Top = 108
+  Top = 133
   Width = 850
   Caption = 'Кодовые слова'
   ClientHeight = 544
