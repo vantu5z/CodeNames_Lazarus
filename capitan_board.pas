@@ -131,6 +131,8 @@ begin
       begin
         (FindComponent(_card_name) as Tlabel).Font.Style:= [fsStrikeOut];
         (FindComponent(_card_name) as Tlabel).Font.Color:= $000000;
+        (FindComponent(_card_name) as Tlabel).OptimalFill:=False;
+        (FindComponent(_card_name) as Tlabel).OptimalFill:=True;
       end
     else
       begin
