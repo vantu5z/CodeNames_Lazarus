@@ -1,0 +1,38 @@
+object Form_timeout: TForm_timeout
+  Left = 394
+  Height = 301
+  Top = 150
+  Width = 549
+  Caption = 'Таймер'
+  ClientHeight = 301
+  ClientWidth = 549
+  OnShow = FormShow
+  Position = poDefault
+  LCLVersion = '1.6.4.0'
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    Left = 15
+    Height = 140
+    Top = 24
+    Width = 519
+    Alignment = taCenter
+    Caption = 'Время на раздумья истекло!!!'#10'Сделайте Ваш ход!!!'#10#10'Если не получается объеденить больше одного слова,'#10'то загадывайте одно.'
+    Font.Height = -21
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button_ok: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    Left = 193
+    Height = 46
+    Top = 224
+    Width = 162
+    Caption = 'Сделать ход'
+    Font.Height = -19
+    OnClick = Button_okClick
+    ParentFont = False
+    TabOrder = 0
+  end
+end

@@ -3,13 +3,13 @@
   <ProjectSession>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="13">
+    <Units Count="14">
       <Unit0>
         <Filename Value="CodeWords.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="17"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="26"/>
       </Unit0>
       <Unit1>
         <Filename Value="main_board.pas"/>
@@ -17,9 +17,10 @@
         <ComponentName Value="Form_main_board"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="82"/>
-        <CursorPos X="44" Y="101"/>
-        <UsageCount Value="24"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="340"/>
+        <CursorPos X="29" Y="347"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -29,11 +30,10 @@
         <ComponentName Value="Form_capitan_board"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="116"/>
         <CursorPos X="9" Y="135"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
@@ -109,40 +109,140 @@
         <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
       </Unit12>
+      <Unit13>
+        <Filename Value="timeout_dialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form_timeout"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="17"/>
+        <CursorPos X="45" Y="41"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit13>
     </Units>
-    <JumpHistory Count="8" HistoryIndex="7">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="main_board.pas"/>
-        <Caret Line="6" Column="16"/>
+        <Caret Line="187" Column="21" TopLine="173"/>
       </Position1>
       <Position2>
         <Filename Value="main_board.pas"/>
-        <Caret Line="187" Column="21" TopLine="173"/>
+        <Caret Line="205" Column="21" TopLine="191"/>
       </Position2>
       <Position3>
         <Filename Value="main_board.pas"/>
-        <Caret Line="205" Column="21" TopLine="191"/>
+        <Caret Line="305" Column="21" TopLine="291"/>
       </Position3>
       <Position4>
         <Filename Value="main_board.pas"/>
-        <Caret Line="305" Column="21" TopLine="291"/>
+        <Caret Line="311" Column="10" TopLine="296"/>
       </Position4>
       <Position5>
         <Filename Value="main_board.pas"/>
-        <Caret Line="311" Column="10" TopLine="296"/>
+        <Caret Line="64" Column="26" TopLine="54"/>
       </Position5>
       <Position6>
         <Filename Value="main_board.pas"/>
-        <Caret Line="64" Column="26" TopLine="54"/>
+        <Caret Line="185" Column="14" TopLine="171"/>
       </Position6>
       <Position7>
         <Filename Value="main_board.pas"/>
-        <Caret Line="185" Column="14" TopLine="171"/>
+        <Caret Line="97" Column="53" TopLine="82"/>
       </Position7>
       <Position8>
         <Filename Value="main_board.pas"/>
-        <Caret Line="97" Column="53" TopLine="82"/>
+        <Caret Line="101" Column="44" TopLine="82"/>
       </Position8>
+      <Position9>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="102" Column="44" TopLine="83"/>
+      </Position9>
+      <Position10>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="103" Column="44" TopLine="84"/>
+      </Position10>
+      <Position11>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="104" Column="44" TopLine="85"/>
+      </Position11>
+      <Position12>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="106" Column="44" TopLine="87"/>
+      </Position12>
+      <Position13>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="332" Column="60" TopLine="330"/>
+      </Position13>
+      <Position14>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="220" Column="74" TopLine="216"/>
+      </Position14>
+      <Position15>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="219" Column="34" TopLine="237"/>
+      </Position15>
+      <Position16>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="334" Column="3" TopLine="326"/>
+      </Position16>
+      <Position17>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="218" TopLine="213"/>
+      </Position17>
+      <Position18>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="219" TopLine="213"/>
+      </Position18>
+      <Position19>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="225" Column="38" TopLine="213"/>
+      </Position19>
+      <Position20>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="227" Column="44" TopLine="213"/>
+      </Position20>
+      <Position21>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="345" Column="7" TopLine="322"/>
+      </Position21>
+      <Position22>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="221" Column="7" TopLine="216"/>
+      </Position22>
+      <Position23>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="17" Column="34"/>
+      </Position23>
+      <Position24>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="21" Column="34"/>
+      </Position24>
+      <Position25>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="23" Column="34"/>
+      </Position25>
+      <Position26>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="36" Column="9" TopLine="11"/>
+      </Position26>
+      <Position27>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="37" Column="5" TopLine="12"/>
+      </Position27>
+      <Position28>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="346" Column="56" TopLine="340"/>
+      </Position28>
+      <Position29>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="9" Column="52"/>
+      </Position29>
+      <Position30>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="18" Column="52"/>
+      </Position30>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

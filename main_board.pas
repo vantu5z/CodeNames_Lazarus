@@ -6,22 +6,26 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls, capitan_board;
+  ExtCtrls, ComCtrls, capitan_board, timeout_dialog;
 
 type
 
   { TForm_main_board }
 
   TForm_main_board = class(TForm)
+    Button_start_timer: TButton;
     Button_show_cards_form: TButton;
     Button_new_game: TButton;
     Button_end_move: TButton;
     Button_generate: TButton;
     GroupBox1: TGroupBox;
     GroupBox2: TGroupBox;
+    GroupBox_timers: TGroupBox;
     GroupBox_cards: TGroupBox;
     Label_pl_move: TLabel;
     Memo_words: TMemo;
+    ProgressBar_timer: TProgressBar;
+    Timer_game: TTimer;
     word_1_1: TLabel;
     Label_pl_1: TLabel;
     Label_pl_2: TLabel;
@@ -53,9 +57,11 @@ type
     procedure Button_generateClick(Sender: TObject);
     procedure Button_new_gameClick(Sender: TObject);
     procedure Button_show_cards_formClick(Sender: TObject);
+    procedure Button_start_timerClick(Sender: TObject);
     procedure FormResize(Sender: TObject);
     procedure ClickOnCard(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Timer_gameTimer(Sender: TObject);
 
   private
     { private declarations }
@@ -207,6 +213,21 @@ begin
   Form_capitan_board.Show;
 end;
 
+procedure TForm_main_board.Button_start_timerClick(Sender: TObject);
+begin
+  ProgressBar_timer.Position:=0;
+  if Timer_game.Enabled = True then
+    begin
+      Timer_game.Enabled:=False;
+      Button_start_timer.Caption:='Запустить';
+    end
+    else
+    begin
+      Timer_game.Enabled:=True;
+      Button_start_timer.Caption:='Стоп';
+    end;
+end;
+
 procedure TForm_main_board.FormResize(Sender: TObject);
 var
   card_width: integer;
@@ -314,6 +335,17 @@ procedure TForm_main_board.FormShow(Sender: TObject);
 begin
   Form_capitan_board.Show;
   Clear_board;
+end;
+
+procedure TForm_main_board.Timer_gameTimer(Sender: TObject);
+begin
+  ProgressBar_timer.Position:= ProgressBar_timer.Position+1;
+  if ProgressBar_timer.Position = ProgressBar_timer.Max then
+    begin
+      Timer_game.Enabled:=False;
+      Button_start_timer.Caption:='Запустить';
+      Form_timeout.ShowModal;
+    end;
 end;
 
 procedure TForm_main_board.Clear_board;
