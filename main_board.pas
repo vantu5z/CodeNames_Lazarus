@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls, ComCtrls, capitan_board, timeout_dialog;
+  ExtCtrls, ComCtrls, capitan_board, timeout_dialog, winer_dialog;
 
 type
 
@@ -320,7 +320,8 @@ begin
             inc(pl_2_score);
             Label_pl_2.Caption:=inttostr(pl_2_score);
           end;
-      ShowMessage('Выиграла команда ' + player_name);
+      Form_winer.Label_winer.Caption:='Выиграла команда ' + player_name;
+      Form_winer.ShowModal;
     end;
 
   // переход хода, если карта не цвета игрока

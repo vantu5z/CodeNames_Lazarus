@@ -1,0 +1,37 @@
+object Form_winer: TForm_winer
+  Left = 386
+  Height = 211
+  Top = 143
+  Width = 617
+  Caption = 'Победитель'
+  ClientHeight = 211
+  ClientWidth = 617
+  OnShow = FormShow
+  LCLVersion = '1.6.4.0'
+  object Label_winer: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    Left = 168
+    Height = 32
+    Top = 48
+    Width = 281
+    Alignment = taCenter
+    Caption = 'Победила команда ХХХ !!!'
+    Font.Height = -24
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button_ok: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    Left = 227
+    Height = 46
+    Top = 144
+    Width = 162
+    Caption = 'Продолжить'
+    Font.Height = -19
+    OnClick = Button_okClick
+    ParentFont = False
+    TabOrder = 0
+  end
+end

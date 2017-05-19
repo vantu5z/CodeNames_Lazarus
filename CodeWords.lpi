@@ -31,7 +31,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="CodeWords.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -56,6 +56,12 @@
         <ComponentName Value="Form_timeout"/>
         <ResourceBaseClass Value="Form"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="winer_dialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form_winer"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit4>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
