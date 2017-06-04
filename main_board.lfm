@@ -2,10 +2,10 @@ object Form_main_board: TForm_main_board
   Left = 213
   Height = 669
   Top = 40
-  Width = 915
+  Width = 938
   Caption = 'Кодовые слова'
   ClientHeight = 669
-  ClientWidth = 915
+  ClientWidth = 938
   OnResize = FormResize
   OnShow = FormShow
   LCLVersion = '1.6.4.0'
@@ -13,7 +13,7 @@ object Form_main_board: TForm_main_board
     AnchorSideTop.Control = GroupBox_cards
     AnchorSideRight.Control = GroupBox2
     AnchorSideRight.Side = asrCenter
-    Left = 727
+    Left = 750
     Height = 145
     Top = 10
     Width = 164
@@ -62,7 +62,7 @@ object Form_main_board: TForm_main_board
     AnchorSideTop.Side = asrBottom
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 725
+    Left = 748
     Height = 113
     Top = 313
     Width = 169
@@ -111,7 +111,7 @@ object Form_main_board: TForm_main_board
     AnchorSideTop.Side = asrBottom
     AnchorSideRight.Control = GroupBox2
     AnchorSideRight.Side = asrCenter
-    Left = 715
+    Left = 738
     Height = 60
     Top = 456
     Width = 188
@@ -129,7 +129,7 @@ object Form_main_board: TForm_main_board
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
-    Left = 728
+    Left = 751
     Height = 41
     Top = 608
     Width = 163
@@ -151,7 +151,7 @@ object Form_main_board: TForm_main_board
     Left = 10
     Height = 649
     Top = 10
-    Width = 689
+    Width = 712
     Anchors = [akTop, akLeft, akRight, akBottom]
     BorderSpacing.Left = 10
     BorderSpacing.Top = 10
@@ -159,13 +159,13 @@ object Form_main_board: TForm_main_board
     BorderSpacing.Bottom = 10
     Caption = 'Игровое поле'
     ClientHeight = 623
-    ClientWidth = 687
+    ClientWidth = 710
     Font.Height = -19
     ParentColor = False
     ParentFont = False
     TabOrder = 4
     object word_1_1: TLabel
-      Left = 11
+      Left = 13
       Height = 72
       Top = 8
       Width = 120
@@ -186,7 +186,7 @@ object Form_main_board: TForm_main_board
       AnchorSideTop.Control = word_1_1
       AnchorSideBottom.Control = word_1_1
       AnchorSideBottom.Side = asrBottom
-      Left = 148
+      Left = 155
       Height = 72
       Top = 8
       Width = 120
@@ -207,7 +207,7 @@ object Form_main_board: TForm_main_board
       AnchorSideTop.Control = word_1_1
       AnchorSideBottom.Control = word_1_1
       AnchorSideBottom.Side = asrBottom
-      Left = 288
+      Left = 300
       Height = 72
       Top = 8
       Width = 120
@@ -228,7 +228,7 @@ object Form_main_board: TForm_main_board
       AnchorSideTop.Control = word_1_1
       AnchorSideBottom.Control = word_1_1
       AnchorSideBottom.Side = asrBottom
-      Left = 426
+      Left = 442
       Height = 72
       Top = 8
       Width = 112
@@ -250,7 +250,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_1_1
       AnchorSideBottom.Side = asrBottom
-      Left = 562
+      Left = 583
       Height = 72
       Top = 8
       Width = 106
@@ -271,7 +271,7 @@ object Form_main_board: TForm_main_board
       AnchorSideLeft.Control = word_1_1
       AnchorSideRight.Control = word_1_1
       AnchorSideRight.Side = asrBottom
-      Left = 11
+      Left = 13
       Height = 72
       Top = 107
       Width = 120
@@ -293,7 +293,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_2_1
       AnchorSideBottom.Side = asrBottom
-      Left = 148
+      Left = 155
       Height = 72
       Top = 107
       Width = 120
@@ -315,7 +315,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_2_1
       AnchorSideBottom.Side = asrBottom
-      Left = 288
+      Left = 300
       Height = 72
       Top = 107
       Width = 120
@@ -337,7 +337,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_2_1
       AnchorSideBottom.Side = asrBottom
-      Left = 426
+      Left = 442
       Height = 72
       Top = 107
       Width = 112
@@ -359,7 +359,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_2_1
       AnchorSideBottom.Side = asrBottom
-      Left = 562
+      Left = 583
       Height = 72
       Top = 107
       Width = 106
@@ -381,7 +381,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_3_1
       AnchorSideBottom.Side = asrBottom
-      Left = 562
+      Left = 583
       Height = 72
       Top = 214
       Width = 106
@@ -403,7 +403,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_3_1
       AnchorSideBottom.Side = asrBottom
-      Left = 426
+      Left = 442
       Height = 72
       Top = 214
       Width = 112
@@ -425,7 +425,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_3_1
       AnchorSideBottom.Side = asrBottom
-      Left = 288
+      Left = 300
       Height = 72
       Top = 214
       Width = 120
@@ -447,7 +447,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_3_1
       AnchorSideBottom.Side = asrBottom
-      Left = 148
+      Left = 155
       Height = 72
       Top = 214
       Width = 120
@@ -466,7 +466,7 @@ object Form_main_board: TForm_main_board
       AnchorSideLeft.Control = word_1_1
       AnchorSideRight.Control = word_1_1
       AnchorSideRight.Side = asrBottom
-      Left = 11
+      Left = 13
       Height = 72
       Top = 214
       Width = 120
@@ -485,7 +485,7 @@ object Form_main_board: TForm_main_board
       AnchorSideLeft.Control = word_1_1
       AnchorSideRight.Control = word_1_1
       AnchorSideRight.Side = asrBottom
-      Left = 11
+      Left = 13
       Height = 72
       Top = 313
       Width = 120
@@ -507,7 +507,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_4_1
       AnchorSideBottom.Side = asrBottom
-      Left = 148
+      Left = 155
       Height = 72
       Top = 313
       Width = 120
@@ -529,7 +529,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_4_1
       AnchorSideBottom.Side = asrBottom
-      Left = 288
+      Left = 300
       Height = 72
       Top = 313
       Width = 120
@@ -551,7 +551,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_4_1
       AnchorSideBottom.Side = asrBottom
-      Left = 426
+      Left = 442
       Height = 72
       Top = 313
       Width = 112
@@ -573,7 +573,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_4_1
       AnchorSideBottom.Side = asrBottom
-      Left = 562
+      Left = 583
       Height = 72
       Top = 313
       Width = 106
@@ -595,7 +595,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_5_1
       AnchorSideBottom.Side = asrBottom
-      Left = 562
+      Left = 583
       Height = 72
       Top = 421
       Width = 106
@@ -617,7 +617,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_5_1
       AnchorSideBottom.Side = asrBottom
-      Left = 426
+      Left = 442
       Height = 72
       Top = 421
       Width = 112
@@ -639,7 +639,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_5_1
       AnchorSideBottom.Side = asrBottom
-      Left = 288
+      Left = 300
       Height = 72
       Top = 421
       Width = 120
@@ -661,7 +661,7 @@ object Form_main_board: TForm_main_board
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = word_5_1
       AnchorSideBottom.Side = asrBottom
-      Left = 148
+      Left = 155
       Height = 72
       Top = 421
       Width = 120
@@ -680,7 +680,7 @@ object Form_main_board: TForm_main_board
       AnchorSideLeft.Control = word_1_1
       AnchorSideRight.Control = word_1_1
       AnchorSideRight.Side = asrBottom
-      Left = 11
+      Left = 13
       Height = 72
       Top = 421
       Width = 120
@@ -712,7 +712,7 @@ object Form_main_board: TForm_main_board
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = Button_generate
     AnchorSideTop.Side = asrBottom
-    Left = 710
+    Left = 733
     Height = 41
     Top = 541
     Width = 198
@@ -728,14 +728,14 @@ object Form_main_board: TForm_main_board
     AnchorSideLeft.Control = GroupBox1
     AnchorSideTop.Control = GroupBox1
     AnchorSideTop.Side = asrBottom
-    Left = 727
+    Left = 750
     Height = 128
     Top = 165
-    Width = 161
+    Width = 167
     BorderSpacing.Top = 10
     Caption = 'Таймеры'
     ClientHeight = 102
-    ClientWidth = 159
+    ClientWidth = 165
     Font.Height = -19
     ParentFont = False
     TabOrder = 7
@@ -747,26 +747,41 @@ object Form_main_board: TForm_main_board
       Left = 10
       Height = 41
       Top = 0
-      Width = 139
+      Width = 145
       Anchors = [akTop, akLeft, akRight]
       BorderSpacing.Left = 10
       BorderSpacing.Right = 10
-      Max = 300
+      Max = 60
       ParentFont = False
       Smooth = True
       Step = 1
       TabOrder = 0
     end
     object Button_start_timer: TButton
-      Left = 32
+      Left = 10
       Height = 39
       Top = 56
-      Width = 104
-      Caption = 'Запустить'
+      Width = 78
+      Caption = 'Старт'
       Font.Height = -21
       OnClick = Button_start_timerClick
       ParentFont = False
       TabOrder = 1
+    end
+    object SpinEdit_time: TSpinEdit
+      AnchorSideLeft.Control = Button_start_timer
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Button_start_timer
+      AnchorSideTop.Side = asrCenter
+      Left = 93
+      Height = 37
+      Top = 57
+      Width = 62
+      BorderSpacing.Left = 5
+      MaxValue = 5
+      MinValue = 1
+      TabOrder = 2
+      Value = 1
     end
   end
   object Timer_game: TTimer

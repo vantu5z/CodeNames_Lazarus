@@ -18,8 +18,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="312"/>
-        <CursorPos X="46" Y="329"/>
+        <TopLine Value="213"/>
+        <CursorPos X="67" Y="230"/>
         <UsageCount Value="26"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -38,81 +38,10 @@
         <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
-        <Filename Value="/usr/lib/lazarus/lcl/include/control.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="2111"/>
-        <CursorPos Y="2125"/>
-        <UsageCount Value="10"/>
-      </Unit3>
-      <Unit4>
-        <Filename Value="/usr/lib/lazarus/lcl/include/buttoncontrol.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="7"/>
-        <CursorPos Y="21"/>
-        <UsageCount Value="10"/>
-      </Unit4>
-      <Unit5>
-        <Filename Value="/usr/lib/lazarus/lcl/include/buttons.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="155"/>
-        <CursorPos Y="170"/>
-        <UsageCount Value="10"/>
-      </Unit5>
-      <Unit6>
-        <Filename Value="/usr/lib/lazarus/lcl/include/wincontrol.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="5371"/>
-        <CursorPos Y="5385"/>
-        <UsageCount Value="10"/>
-      </Unit6>
-      <Unit7>
-        <Filename Value="/usr/lib/lazarus/lcl/lclmessageglue.pas"/>
-        <UnitName Value="LCLMessageGlue"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="105"/>
-        <CursorPos Y="123"/>
-        <UsageCount Value="10"/>
-      </Unit7>
-      <Unit8>
-        <Filename Value="/usr/lib/lazarus/lcl/interfaces/gtk2/gtk2wsstdctrls.pp"/>
-        <UnitName Value="Gtk2WSStdCtrls"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="2414"/>
-        <CursorPos Y="2429"/>
-        <UsageCount Value="10"/>
-      </Unit8>
-      <Unit9>
-        <Filename Value="/usr/lib/lazarus/lcl/interfaces/gtk2/gtk2widgetset.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="2388"/>
-        <CursorPos X="27" Y="2394"/>
-        <UsageCount Value="10"/>
-      </Unit9>
-      <Unit10>
-        <Filename Value="/usr/lib/lazarus/lcl/graphics.pp"/>
-        <UnitName Value="Graphics"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="256"/>
-        <CursorPos X="11" Y="266"/>
-        <UsageCount Value="10"/>
-      </Unit10>
-      <Unit11>
-        <Filename Value="/usr/lib/lazarus/lcl/include/customform.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="2197"/>
-        <CursorPos Y="2212"/>
-        <UsageCount Value="10"/>
-      </Unit11>
-      <Unit12>
-        <Filename Value="/usr/lib/lazarus/lcl/forms.pp"/>
-        <UnitName Value="Forms"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
-      </Unit12>
-      <Unit13>
         <Filename Value="timeout_dialog.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form_timeout"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="2"/>
         <TopLine Value="17"/>
@@ -120,11 +49,12 @@
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-      </Unit13>
-      <Unit14>
+      </Unit3>
+      <Unit4>
         <Filename Value="winer_dialog.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form_winer"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="3"/>
         <TopLine Value="17"/>
@@ -132,128 +62,200 @@
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="/usr/lib/lazarus/lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2111"/>
+        <CursorPos Y="2125"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="/usr/lib/lazarus/lcl/include/buttoncontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos Y="21"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="/usr/lib/lazarus/lcl/include/buttons.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="155"/>
+        <CursorPos Y="170"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="/usr/lib/lazarus/lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5371"/>
+        <CursorPos Y="5385"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="/usr/lib/lazarus/lcl/lclmessageglue.pas"/>
+        <UnitName Value="LCLMessageGlue"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="105"/>
+        <CursorPos Y="123"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="/usr/lib/lazarus/lcl/interfaces/gtk2/gtk2wsstdctrls.pp"/>
+        <UnitName Value="Gtk2WSStdCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2414"/>
+        <CursorPos Y="2429"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="/usr/lib/lazarus/lcl/interfaces/gtk2/gtk2widgetset.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2388"/>
+        <CursorPos X="27" Y="2394"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="/usr/lib/lazarus/lcl/graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="256"/>
+        <CursorPos X="11" Y="266"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="/usr/lib/lazarus/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2197"/>
+        <CursorPos Y="2212"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="/usr/lib/lazarus/lcl/forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
       </Unit14>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="main_board.pas"/>
-        <Caret Line="64" Column="26" TopLine="54"/>
+        <Caret Line="103" Column="44" TopLine="84"/>
       </Position1>
       <Position2>
         <Filename Value="main_board.pas"/>
-        <Caret Line="185" Column="14" TopLine="171"/>
+        <Caret Line="104" Column="44" TopLine="85"/>
       </Position2>
       <Position3>
         <Filename Value="main_board.pas"/>
-        <Caret Line="97" Column="53" TopLine="82"/>
+        <Caret Line="106" Column="44" TopLine="87"/>
       </Position3>
       <Position4>
         <Filename Value="main_board.pas"/>
-        <Caret Line="101" Column="44" TopLine="82"/>
+        <Caret Line="332" Column="60" TopLine="330"/>
       </Position4>
       <Position5>
         <Filename Value="main_board.pas"/>
-        <Caret Line="102" Column="44" TopLine="83"/>
+        <Caret Line="220" Column="74" TopLine="216"/>
       </Position5>
       <Position6>
         <Filename Value="main_board.pas"/>
-        <Caret Line="103" Column="44" TopLine="84"/>
+        <Caret Line="334" Column="3" TopLine="326"/>
       </Position6>
       <Position7>
         <Filename Value="main_board.pas"/>
-        <Caret Line="104" Column="44" TopLine="85"/>
+        <Caret Line="218" TopLine="213"/>
       </Position7>
       <Position8>
         <Filename Value="main_board.pas"/>
-        <Caret Line="106" Column="44" TopLine="87"/>
+        <Caret Line="219" TopLine="213"/>
       </Position8>
       <Position9>
         <Filename Value="main_board.pas"/>
-        <Caret Line="332" Column="60" TopLine="330"/>
+        <Caret Line="225" Column="38" TopLine="213"/>
       </Position9>
       <Position10>
         <Filename Value="main_board.pas"/>
-        <Caret Line="220" Column="74" TopLine="216"/>
+        <Caret Line="227" Column="44" TopLine="213"/>
       </Position10>
       <Position11>
         <Filename Value="main_board.pas"/>
-        <Caret Line="219" Column="34" TopLine="237"/>
+        <Caret Line="345" Column="7" TopLine="322"/>
       </Position11>
       <Position12>
         <Filename Value="main_board.pas"/>
-        <Caret Line="334" Column="3" TopLine="326"/>
+        <Caret Line="221" Column="7" TopLine="216"/>
       </Position12>
       <Position13>
-        <Filename Value="main_board.pas"/>
-        <Caret Line="218" TopLine="213"/>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="17" Column="34"/>
       </Position13>
       <Position14>
-        <Filename Value="main_board.pas"/>
-        <Caret Line="219" TopLine="213"/>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="21" Column="34"/>
       </Position14>
       <Position15>
-        <Filename Value="main_board.pas"/>
-        <Caret Line="225" Column="38" TopLine="213"/>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="23" Column="34"/>
       </Position15>
       <Position16>
-        <Filename Value="main_board.pas"/>
-        <Caret Line="227" Column="44" TopLine="213"/>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="36" Column="9" TopLine="11"/>
       </Position16>
       <Position17>
-        <Filename Value="main_board.pas"/>
-        <Caret Line="345" Column="7" TopLine="322"/>
+        <Filename Value="timeout_dialog.pas"/>
+        <Caret Line="37" Column="5" TopLine="12"/>
       </Position17>
       <Position18>
         <Filename Value="main_board.pas"/>
-        <Caret Line="221" Column="7" TopLine="216"/>
+        <Caret Line="346" Column="56" TopLine="340"/>
       </Position18>
       <Position19>
-        <Filename Value="timeout_dialog.pas"/>
-        <Caret Line="17" Column="34"/>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="9" Column="52"/>
       </Position19>
       <Position20>
         <Filename Value="timeout_dialog.pas"/>
-        <Caret Line="21" Column="34"/>
+        <Caret Line="18" Column="52"/>
       </Position20>
       <Position21>
-        <Filename Value="timeout_dialog.pas"/>
-        <Caret Line="23" Column="34"/>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="347" Column="29" TopLine="340"/>
       </Position21>
       <Position22>
-        <Filename Value="timeout_dialog.pas"/>
-        <Caret Line="36" Column="9" TopLine="11"/>
+        <Filename Value="winer_dialog.pas"/>
+        <Caret Line="21" Column="37"/>
       </Position22>
       <Position23>
-        <Filename Value="timeout_dialog.pas"/>
-        <Caret Line="37" Column="5" TopLine="12"/>
+        <Filename Value="winer_dialog.pas"/>
+        <Caret Line="43" Column="26" TopLine="15"/>
       </Position23>
       <Position24>
         <Filename Value="main_board.pas"/>
-        <Caret Line="346" Column="56" TopLine="340"/>
+        <Caret Line="329" Column="46" TopLine="312"/>
       </Position24>
       <Position25>
         <Filename Value="main_board.pas"/>
-        <Caret Line="9" Column="52"/>
+        <Caret Line="330" Column="46" TopLine="313"/>
       </Position25>
       <Position26>
-        <Filename Value="timeout_dialog.pas"/>
-        <Caret Line="18" Column="52"/>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="227" Column="26" TopLine="145"/>
       </Position26>
       <Position27>
         <Filename Value="main_board.pas"/>
-        <Caret Line="347" Column="29" TopLine="340"/>
+        <Caret Line="349" Column="46" TopLine="334"/>
       </Position27>
       <Position28>
         <Filename Value="main_board.pas"/>
-        <Caret Line="9" Column="66" TopLine="13"/>
+        <Caret Line="219" Column="3" TopLine="217"/>
       </Position28>
       <Position29>
-        <Filename Value="winer_dialog.pas"/>
-        <Caret Line="21" Column="37"/>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="346" Column="56" TopLine="343"/>
       </Position29>
       <Position30>
-        <Filename Value="winer_dialog.pas"/>
-        <Caret Line="43" Column="26" TopLine="15"/>
+        <Filename Value="main_board.pas"/>
+        <Caret Line="227" Column="92" TopLine="217"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>

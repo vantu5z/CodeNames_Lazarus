@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls, ComCtrls, capitan_board, timeout_dialog, winer_dialog;
+  ExtCtrls, ComCtrls, Spin, capitan_board, timeout_dialog, winer_dialog;
 
 type
 
@@ -25,6 +25,7 @@ type
     Label_pl_move: TLabel;
     Memo_words: TMemo;
     ProgressBar_timer: TProgressBar;
+    SpinEdit_time: TSpinEdit;
     Timer_game: TTimer;
     word_1_1: TLabel;
     Label_pl_1: TLabel;
@@ -219,10 +220,11 @@ begin
   if Timer_game.Enabled = True then
     begin
       Timer_game.Enabled:=False;
-      Button_start_timer.Caption:='Запустить';
+      Button_start_timer.Caption:='Старт';
     end
-    else
+  else
     begin
+      ProgressBar_timer.Max:=integer(SpinEdit_time.Value*60);// таймер в минутах
       Timer_game.Enabled:=True;
       Button_start_timer.Caption:='Стоп';
     end;
@@ -344,7 +346,7 @@ begin
   if ProgressBar_timer.Position = ProgressBar_timer.Max then
     begin
       Timer_game.Enabled:=False;
-      Button_start_timer.Caption:='Запустить';
+      Button_start_timer.Caption:='Старт';
       Form_timeout.ShowModal;
     end;
 end;
